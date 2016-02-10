@@ -44,7 +44,7 @@ public class DBHelper extends SQLiteOpenHelper {
 		return true;
 	}
 
-	public String getPassFromUser(String name){
+	public String getPassFromUser(String name) {
 		SQLiteDatabase db = this.getReadableDatabase();
 		Cursor res = db.rawQuery("select * " +
 			"from " + TABLE +
